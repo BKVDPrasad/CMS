@@ -1,0 +1,35 @@
+
+
+{% extends 'common.html' %}
+{% block common %}
+    <table>
+    <tr align="center">
+        <th> <a href="{% url 'slogout'%}" style="text-decoration: none"> Logout </a></th>
+        <th> <a href="{% url 'smodify' %}?un={{ user }}" style="text-decoration: none"> modify </a> </th>
+        <th> <a href="{% url 'viewprofile' %}?un={{ user }}"> view profile </a> </th>
+    </tr>
+    <tr>
+        <th><h3> u login into student</h3></th>
+    </tr>
+    <tr>
+        <th>
+           UserName: {{ user }}
+        </th>
+    </tr>
+    <tr>
+        <th>
+            {%  for x in id%}
+
+            {{ x.id }}<br>
+                {{ x.username}}<br>
+                {{ x.name }}<br>
+                {{ x.password }}<br>
+                {{ x.gender }}<br>
+                {{ x.password }}<br>
+
+            {% endfor %}
+        </th>
+    </tr>
+    </table>
+{% endblock %}
+

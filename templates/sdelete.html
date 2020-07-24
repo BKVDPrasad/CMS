@@ -1,0 +1,50 @@
+{% block common %}
+    {% include 'adminmenu.html' %}
+       <table align="center" border="2">
+
+       <tr >
+           <th>
+               Name
+           </th>
+           <th>
+               Age
+           </th>
+           <th>
+               contact no
+           </th>
+       </tr>
+                          {% for x in res %}
+
+
+
+
+       <tr>
+           <td>
+               {{ x.name }}
+           </td>
+           <td>
+               {{ x.age }}
+           </td>
+           <td>
+               {{ x.contactno }}
+           </td>
+            <td>
+                <form action="{% url 'delete' %}" method="post">
+                              {% csrf_token %}
+                    <input type="hidden" name="cno" value="{{ x.contactno }}">
+                <button type="submit"> Delete</button>
+                               </form>
+
+            </td>
+
+       </tr>
+           {% endfor %}
+       {% if msg %}
+        <tr >
+            <th rowspan="3">
+                {{ msg }}
+            </th>
+        </tr>
+       {% endif %}
+       </table>
+{% endblock %}
