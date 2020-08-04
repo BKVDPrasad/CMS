@@ -12,7 +12,7 @@ colorama==0.4.3
 config==0.5.0.post0
 cycler==0.10.0
 dj-database-url==0.5.0
-Django==3.0.3
+django>=3.0.7
 django-heroku==0.3.1
 future==0.18.2
 gunicorn==19.10.0
@@ -60,5 +60,6 @@ views==0.3
 vincent==0.4.4
 virtualenv==16.7.9
 virtualenvwrapper-win==1.2.5
+Vulnerable versions: >= 3.0.0
 Werkzeug==1.0.1
 whitenoise==5.2.0
