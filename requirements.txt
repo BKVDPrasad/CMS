@@ -60,6 +60,5 @@ views==0.3
 vincent==0.4.4
 virtualenv==16.7.9
 virtualenvwrapper-win==1.2.5
-Vulnerable versions: >= 3.0.0
 Werkzeug==1.0.1
 whitenoise==5.2.0
