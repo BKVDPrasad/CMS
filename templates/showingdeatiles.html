@@ -1,0 +1,34 @@
+{% block common %}
+    {% include 'adminmenu.html' %}
+
+       <table align="center" border="2">
+
+       <tr >
+           <th>
+               Name
+           </th>
+           <th>
+               Age
+           </th>
+           <th>
+               contact no
+           </th>
+       </tr>
+                          {% for x in res %}
+
+       <tr>
+           <td>
+               {{ x.name }}
+           </td>
+           <td>
+               {{ x.age }}
+           </td>
+           <td>
+               {{ x.contactno }}
+           </td>
+
+       </tr>
+           {% endfor %}
+
+       </table>
+{% endblock %}

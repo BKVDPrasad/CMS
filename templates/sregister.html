@@ -1,0 +1,58 @@
+{% extends 'common.html' %}
+{% block common%}
+    {% include 'mainmenu.html' %}
+
+    <form action="{% url 'register' %}" method="post">
+    {% csrf_token %}
+
+    <table align="center" border="0">
+    <tr align="center">
+        <th> <h4> Student Register </h4></th>
+    </tr>
+    <tr align="right">
+        <th>
+            Name:<input type="text" name="t1" required>
+        </th>
+    </tr>
+    <tr align="right">
+        <th>
+            Age:<input type="number" required name="t2">
+        </th>
+    </tr>
+    <tr align="right">
+        <th>
+            ContactNumber:<input required type="tel" name="t3" >
+        </th>
+    </tr>
+    <tr>
+        <th> Gender: &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+         <input type="radio" value="male" name="t4" checked > Male<br>
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" value="female" name="t4" > Female<br>
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" value="other" name="t4" > Other
+    </th>
+    </tr>
+    <tr align="right">
+        <th> UserName: <input type="text" name="t5" required></th>
+    </tr>
+    <tr align="right">
+        <th>
+            Password:<input type="password" required name="t6">
+        </th>
+    </tr>
+    <tr align="center">
+        <th> <button type="submit"> Register    </button></th>
+    </tr>
+        <tr>
+            <th>
+                {% for x in messages %}
+                    {{ x }}
+                {% endfor %}
+            </th>
+        </tr>
+
+    </table>
+
+
+
+    </form>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'common.html' %}
+
+    <table>
+    <tr>
+        <th>
+           Nmae: <input type="text" value="{{data.name}}" name="t1" >
+        </th>
+    </tr>
+    <tr>
+        <th>
+            age: <input type="number" value="{{ data.age }}" name="t2">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            contact no: <input type="tel" value="{{ data.contactno }}" name="t4">
+        </th>
+    </tr>
+    <tr>
+        <th> Gender: &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+         <input type="radio" value="male" name="t5" checked > Male<br>
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" value="female" name="t5" > Female<br>
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" value="other" name="t5" > Other
+    </th>
+    <tr>
+        <th>
+         UserName:   <input type="text" value="{{ data.username }}" name="t6">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Password:<input type="text" value="{{ data.password }}" name="t7">
+        </th>
+    </tr>
+    </table>
+
+
+
+
+
+

@@ -1,3 +1,14 @@
 Django==3.0.3
 pillow==7.0.0
 jinja2==2.11.2
+dj-database-url==0.5.0
+django-heroku==0.3.1
+gunicorn==19.10.0
+idna==2.9
+whitenoise==5.2.0
+urllib3==1.25.8
+requests==2.23.0
+certifi==2019.11.28
+chardet==3.0.4
+psycopg2==2.8.5
+pytz==2020.1
