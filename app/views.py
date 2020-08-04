@@ -105,7 +105,7 @@ def adlogin(request):
     an=request.POST["t1"]
     ps=request.POST["t2"]
     try:
-        Adminlogin.objects.get(username=an,password=ps)
+        Adminlogin.objects.get(username=admin,password=admin)
         return render(request,'adminlogin.html')
     except Adminlogin.DoesNotExist:
 
