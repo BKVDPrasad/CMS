@@ -33,6 +33,7 @@ def register(request):
     g = request.POST.get('t4')
     u = request.POST.get('t5')
     p = request.POST.get("t6")
+    print(c)
     Student(name=n,age=a,contactno=c,gender=g,username=u,password=p).save()
     messages.success(request,'ok')
     return redirect('sregester')
