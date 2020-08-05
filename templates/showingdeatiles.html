@@ -13,6 +13,8 @@
            <th>
                contact no
            </th>
+
+           <th>username</th>
        </tr>
                           {% for x in res %}
 
@@ -26,6 +28,10 @@
            <td>
                {{ x.contactno }}
            </td>
+
+       <td>
+           {{ x.username }}
+       </td>
 
        </tr>
            {% endfor %}
