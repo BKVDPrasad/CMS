@@ -94,7 +94,7 @@ def password(request):
 
             msg="succes"
         else:
-            msg="p1 not euals to p2"
+            msg="password and confirm password are not same"
     except Student.DoesNotExist:
 
         msg="contact number does not match"
@@ -104,10 +104,12 @@ def password(request):
 def adlogin(request):
     an=request.POST["t1"]
     ps=request.POST["t2"]
-    try:
-        Adminlogin.objects.get(username=admin,password=admin)
+    # try:
+    #     Adminlogin.objects.get(username=admin,password=admin)
+    if an == 'admin' and ps == 'admin':
         return render(request,'adminlogin.html')
-    except Adminlogin.DoesNotExist:
+    #except Adminlogin.DoesNotExist:
+    else:
 
         return render(request,"admin.html",{"msg":"login faill"})
 
