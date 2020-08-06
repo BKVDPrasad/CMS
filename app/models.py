@@ -11,7 +11,7 @@ class Student(models.Model):
     password=models.CharField(max_length=30)
 
     def __str__(self):
-        self.age
+       return self.name
 
 
 class Adminlogin(models.Model):
