@@ -5,7 +5,7 @@ from django.db import models
 class Student(models.Model):
     name=models.CharField(max_length=40)
     age = models.IntegerField()
-    contactno=models.IntegerField(unique=True)
+    contactno=models.CharField(unique=True,max_length=10)
     gender=models.CharField(max_length=20)
     username=models.CharField(max_length=30,unique=True)
     password=models.CharField(max_length=30)
