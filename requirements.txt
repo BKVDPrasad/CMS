@@ -54,7 +54,7 @@ six==1.15.0
 SQLAlchemy==1.3.17
 sqlparse==0.3.0
 text-unidecode==1.3
-urllib3==1.25.8
+urllib3==1.26.5
 view==0.1
 views==0.3
 vincent==0.4.4
