@@ -19,3 +19,9 @@ class Adminlogin(models.Model):
     password=models.CharField(max_length=30)
 
 
+
+# class ModelASerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = ModelA
+#         fields = '__all__'
+#         depth = 1
