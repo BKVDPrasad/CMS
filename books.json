@@ -1,0 +1,101 @@
+[
+{
+  "model": "app3.item",
+  "pk": 1,
+  "fields": {
+    "name": "test 1",
+    "description": "update dePPPsc",
+    "price": "12.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 2,
+  "fields": {
+    "name": "N3",
+    "description": "some",
+    "price": "8.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 3,
+  "fields": {
+    "name": "N3",
+    "description": "some",
+    "price": "8.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 4,
+  "fields": {
+    "name": "new",
+    "description": "new desc",
+    "price": "19.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 5,
+  "fields": {
+    "name": "Updated name",
+    "description": "update desc",
+    "price": "12.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 6,
+  "fields": {
+    "name": "Updated name",
+    "description": "update desc",
+    "price": "12.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 7,
+  "fields": {
+    "name": "UpdatedPP name",
+    "description": "update desc",
+    "price": "12.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 8,
+  "fields": {
+    "name": "UpdatedPP name",
+    "description": "update desc",
+    "price": "12.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 9,
+  "fields": {
+    "name": "UpdatedPP name",
+    "description": "update desc",
+    "price": "12.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 10,
+  "fields": {
+    "name": "UpdatedPP name",
+    "description": "update dePPPsc",
+    "price": "12.00"
+  }
+},
+{
+  "model": "app3.item",
+  "pk": 11,
+  "fields": {
+    "name": "UpdatedPP name",
+    "description": "update dePPPsc",
+    "price": "12.00"
+  }
+}
+]
