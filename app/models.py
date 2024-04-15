@@ -25,3 +25,28 @@ class Adminlogin(models.Model):
 #         model = ModelA
 #         fields = '__all__'
 #         depth = 1
+
+class EmployeeCarDetails(models.Model):
+    car_id = models.BigAutoField(primary_key=True)
+    car_mode = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.car_mode
+
+class Employee(models.Model):
+    emp_id = models.BigAutoField(primary_key=True)
+    emp_name = models.CharField(max_length=50)
+    car = models.ManyToManyField(EmployeeCarDetails, blank=True)
+
+
+    def save(self):
+        super(Employee, self).save()
+        val = EmployeeCarDetails.objects.get(car_id=1)
+        self.car.add(val)
+
+    def __str__(self):
+        return str(self.emp_id)
+
+
+# class User(AbstractUser):
+# 
