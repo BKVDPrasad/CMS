@@ -1,0 +1,46 @@
+
+{% extends 'common.html' %}
+
+{% block common %}
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display == "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    window.onload = function() {
+  yourFunction(param1, param2);
+};
+</script>
+
+<table border="2" align="center" id="myDIV">
+    <tr>
+        <th> Nmae </th>
+        <th> Phone </th>
+        <th> Address </th>
+    </tr>
+    <tr>
+        <td> Prasad </td>
+        <td> 100 </td>
+        <td> Guntur </td>
+    </tr>
+    <tr>
+        <td> Prasad </td>
+        <td> 100 </td>
+        <td> Guntur </td>
+    </tr>
+    <tr>
+        <td> Prasad </td>
+        <td> 100 </td>
+        <td> Guntur </td>
+    </tr>
+</table>
+
+<button style="color:red" onclick="myFunction()"> show/Hide</button>
+
+
+{% endblock %}
