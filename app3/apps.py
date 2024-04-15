@@ -9,4 +9,4 @@ class App3Config(AppConfig):
     def ready(self):
         pass
 
-# waht is use of ready method here.
+# waht is use of ready method here. test
