@@ -140,3 +140,6 @@ def delete(request):
     Student.objects.filter(contactno=p).delete()
     a = Student.objects.all()
     return render(request,"sdelete.html",{"msg":"success","res": a})
+
+def new(request):
+    return render(request, 'new.html')
